@@ -11,20 +11,27 @@
   </head>
   <body>
     <header>
-        <div class="text-center py-3 border-bottom">
+        <div class="text-center py-3">
             <a href="/" class="fw-bold text-decoration-none text-light fs-3">.ari</a>
         </div>
+        <nav class="navbar navbar-expand navbar-dark bg-dark border-top border-bottom">
+            <div class="container">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <button type="button" class="nav-link" data-key="route" data-value="home">Home</button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="nav-link" data-key="route" data-value="about">About</button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="nav-link" data-key="route" data-value="tools">Tools</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    <section class="flex">
-        <div class="container">
-            <h1 class="display-1 text-center">
-                Hello World!
-            </h1>
-            <p class="lead text-center">
-                Someday there will be more information here. For now, hello world!
-            </p>
-        </div>
-    </section>
+    <section class="flex" id="main"></section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js" type="module"></script>
   </body>
 </html>
